@@ -7,7 +7,7 @@ export const productList: Iproduct[] = [
     title: "I'm Title ",
     description:
       "I'm Desription I'm Desription I'm Desription I'm Desription I'm Desription I'm Desription  ",
-    imageUrl:
+    imageURL:
       "https://media.istockphoto.com/id/1696167872/photo/aerial-view-of-forest-at-sunset-on-the-background-of-mountains-in-dolomites.jpg?s=1024x1024&w=is&k=20&c=sfRAnSjXlDxAAAMZ0ZtYG5GpetUCOqETKyVc0Oz6kyU=",
     colors: ["white", "red"],
     price: "$500.000",
@@ -22,7 +22,7 @@ export const productList: Iproduct[] = [
     title: "I'm Title 2 ",
     description:
       "I'm Desription I'm Desription I'm Desription I'm Desription I'm Desription I'm Desription  ",
-    imageUrl:
+    imageURL:
       "https://media.istockphoto.com/id/1696167872/photo/aerial-view-of-forest-at-sunset-on-the-background-of-mountains-in-dolomites.jpg?s=1024x1024&w=is&k=20&c=sfRAnSjXlDxAAAMZ0ZtYG5GpetUCOqETKyVc0Oz6kyU=",
     colors: ["white", "red"],
     price: "$500.000",
@@ -37,7 +37,7 @@ export const productList: Iproduct[] = [
     title: "I'm Title ",
     description:
       "I'm Desription I'm Desription I'm Desription I'm Desription I'm Desription I'm Desription  ",
-    imageUrl:
+    imageURL:
       "https://media.istockphoto.com/id/1696167872/photo/aerial-view-of-forest-at-sunset-on-the-background-of-mountains-in-dolomites.jpg?s=1024x1024&w=is&k=20&c=sfRAnSjXlDxAAAMZ0ZtYG5GpetUCOqETKyVc0Oz6kyU=",
     colors: ["white", "red"],
     price: "$500.000",
@@ -52,7 +52,7 @@ export const productList: Iproduct[] = [
     title: "I'm Title ",
     description:
       "I'm Desription I'm Desription I'm Desription I'm Desription I'm Desription I'm Desription  ",
-    imageUrl:
+    imageURL:
       "https://media.istockphoto.com/id/1696167872/photo/aerial-view-of-forest-at-sunset-on-the-background-of-mountains-in-dolomites.jpg?s=1024x1024&w=is&k=20&c=sfRAnSjXlDxAAAMZ0ZtYG5GpetUCOqETKyVc0Oz6kyU=",
     colors: ["white", "red"],
     price: "$500.000",
@@ -67,7 +67,7 @@ export const productList: Iproduct[] = [
     title: "I'm Title ",
     description:
       "I'm Desription I'm Desription I'm Desription I'm Desription I'm Desription I'm Desription  ",
-    imageUrl:
+    imageURL:
       "https://media.istockphoto.com/id/1696167872/photo/aerial-view-of-forest-at-sunset-on-the-background-of-mountains-in-dolomites.jpg?s=1024x1024&w=is&k=20&c=sfRAnSjXlDxAAAMZ0ZtYG5GpetUCOqETKyVc0Oz6kyU=",
     colors: ["white", "red"],
     price: "$500.000",
@@ -82,7 +82,7 @@ export const productList: Iproduct[] = [
     title: "I'm Title ",
     description:
       "I'm Desription I'm Desription I'm Desription I'm Desription I'm Desription I'm Desription  ",
-    imageUrl:
+    imageURL:
       "https://media.istockphoto.com/id/1696167872/photo/aerial-view-of-forest-at-sunset-on-the-background-of-mountains-in-dolomites.jpg?s=1024x1024&w=is&k=20&c=sfRAnSjXlDxAAAMZ0ZtYG5GpetUCOqETKyVc0Oz6kyU=",
     colors: ["white", "red"],
     price: "$500.000",

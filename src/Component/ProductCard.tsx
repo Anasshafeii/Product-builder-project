@@ -10,7 +10,7 @@ interface Iprops {
 const ProductCard = ({ product }: Iprops) => {
   return (
     <div className="border rounded-md p-2 flex flex-col  max-w-sm md:max-w-lg mx-auto md:mx-0">
-      <Image className="w-25 h-25" alt={product.title} src={product.imageUrl} />
+      <Image className="w-25 h-25" alt={product.title} src={product.imageURL} />
 
       <h3>{product.title}</h3>
       <p>{textCutter(product.description)}</p>
