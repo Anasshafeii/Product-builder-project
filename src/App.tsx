@@ -3,6 +3,8 @@ import ProductCard from "./Component/ProductCard";
 import Modal from "./Component/UI/Modal";
 import { productList } from "./Component/data/Productdata";
 import Button from "./Component/UI/Button";
+import { modalInputs } from "./Component/data/Inputs";
+import Input from "./Component/UI/Input";
 
 interface Iprops {}
 
@@ -17,19 +19,38 @@ const App = ({}: Iprops) => {
     setIsOpen(false);
   }
 
-  // Render product List
+  // Render
   const renderProductList = productList.map((product) => (
     <ProductCard product={product} />
+  ));
+
+  const renderInputs = modalInputs.map((input) => (
+    <div className="flex flex-col gap-3">
+      <label className="text-sm font-medium text-gray-700" htmlFor={input.id}>
+        {input.label}
+      </label>
+      <Input type={input.type} id={input.id} name={input.name} />
+    </div>
   ));
 
   return (
     <div className=" container m-5 mx-auto  grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 rounded-md ">
       {renderProductList}
-      <Modal isOpen={isOpen} setOpen={close}>
-        <Button className="bg-indigo-400 p-2 hover:bg-indigo-800 ">
-          Submit
-        </Button>
-        <Button className="bg-gray-400 p-2 hover:bg-gray-800 ">Cancel</Button>
+      <Button className="bg-green-400 p-2 hover:bg-green-800 " onClick={open}>
+        Add
+      </Button>
+      <Modal isOpen={isOpen} setOpen={close} title="Add a new product">
+        <div className="space-y-3">
+          {renderInputs}
+          <form className="flex items-center gap-3">
+            <Button className="bg-indigo-400 p-2 hover:bg-indigo-800 ">
+              Submit
+            </Button>
+            <Button className="bg-gray-400 p-2 hover:bg-gray-800 ">
+              Cancel
+            </Button>
+          </form>
+        </div>
       </Modal>
     </div>
   );
