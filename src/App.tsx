@@ -1,14 +1,26 @@
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import ProductCard from "./Component/ProductCard";
 import Modal from "./Component/UI/Modal";
 import { productList } from "./Component/data/Productdata";
 import Button from "./Component/UI/Button";
 import { modalInputs } from "./Component/data/Inputs";
 import Input from "./Component/UI/Input";
+import { Iproduct } from "./Component/Interfaces/Iproduct";
 
 interface Iprops {}
 
 const App = ({}: Iprops) => {
+  const [product, setProduct] = useState<Iproduct>({
+    title: "",
+    description: "",
+    imageURL: "",
+    price: "",
+    colors: [],
+    category: {
+      name: "",
+      imageUrl: "",
+    },
+  });
   const [isOpen, setIsOpen] = useState(false);
 
   function open() {
@@ -17,6 +29,12 @@ const App = ({}: Iprops) => {
 
   function close() {
     setIsOpen(false);
+  }
+
+  function onChangeHandler(e: ChangeEvent<HTMLInputElement>) {
+    const { value, name } = e.target;
+
+    setProduct({ ...product, [name]: value });
   }
 
   // Render
@@ -29,7 +47,13 @@ const App = ({}: Iprops) => {
       <label className="text-sm font-medium text-gray-700" htmlFor={input.id}>
         {input.label}
       </label>
-      <Input type={input.type} id={input.id} name={input.name} />
+      <Input
+        type={input.type}
+        id={input.id}
+        name={input.name}
+        onChange={onChangeHandler}
+        value={product[input.name]}
+      />
     </div>
   ));
 

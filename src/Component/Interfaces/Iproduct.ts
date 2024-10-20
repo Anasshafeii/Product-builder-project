@@ -2,7 +2,7 @@ export interface Iproduct {
   id?: string | undefined;
   title: string;
   description: string;
-  imageUrl: string;
+  imageURL: string;
   price: string;
   colors: string[];
   category: {
